@@ -1,0 +1,63 @@
+Program Version = DWM3_Entropy_Cluster
+Start Date/Time = 2020-09-18 07:58:29.648861
+Source File = S8-TokenReplace.txt
+Run Mode = NewMatrix
+Beta (blocking) = 485
+Sigma (stop word) = 123
+Mu (match start) = 0.6319
+Mu Increment = 0.0608
+Epsilon (entropy) = 277.3
+Epsilon Increment = 0
+---------------------
+Number of References = 1000
+Total Number of Tokens = 12511
+Number of Unique Tokens = 3738
+Average Token Frequency = 3.3469769930444087
+Std Dev of Frequency = 11.446165556626687
+Maximum Frequency = 400
+Minimum Frequency = 1
+---------------------
+Initial Processing of file S8-TokenReplace.txt mu=0.6319
+    Single-Reference Blocks = 1
+    Multi-Reference Blocks = 1802
+Transitive Closure of Pairs
+(RefID, ClusterID) pair count = 14076
+(RefID, RefID) pair count = 28152
+>Join Operation: Recs from Source 1000
+>Join Operation: Recs from Closure Output 878
+>Join Operation: Refs written to ClusterOutput 878
+Clusters to Final = 177 Refs to Final = 878
+Clusters to Reprocess = 0 Refs to Reprocess = 0
+Final Join Counts
+Source Ref Count = 999
+Good Cluster Ref Count = 878
+Final Output Ref Count = 999
+
+Cluster Profile
+Size	Count	References
+1	128	128
+2	38	76
+3	37	111
+4	19	76
+5	19	95
+6	13	78
+7	9	63
+8	12	96
+9	4	36
+10	8	80
+11	2	22
+12	2	24
+13	1	13
+14	2	28
+16	2	32
+18	1	18
+23	1	23
+Totals	298	999
+
+***Final Results***
+Precision = 0.78230088
+Recall = 0.78815977
+F-Measure = 0.7852194
+
+Finish Date/Time = 2020-09-18 07:58:39.081176
+Total Time = 9.43235089816153
