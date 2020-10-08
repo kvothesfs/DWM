@@ -753,11 +753,14 @@ def buildBlocks(fileName):
 # In[16]:
 
 
-def main(fileName):
-
-    #table = buildBlocks(fileName) <-----comment out
-    #iterateBlocks(ERtype, table) <-----comment out
-    passTableToJava(fileName)
+def main(fileName,useJava=True):
+    if useJava:            
+        passTableToJava(fileName)
+    else:
+        table = buildBlocks(fileName) #<-----comment out
+        iterateBlocks(ERtype, table) #<-----comment out
+        
+        
     runTransitiveClosure()
     reprocess = iterateClusters()
     global mu
@@ -781,7 +784,7 @@ def main(fileName):
 # In[17]:
 
 
-def driver(fn, bt, sg, m, mi, eps, epsin, rCM, rFM, cFJ,rpf ):
+def driver(fn, bt, sg, m, mi, eps, epsin, rCM, rFM, cFJ,rpf,useJava_p=True):
     global sourceFileName
     global hasHeader 
     hasHeader = rpf  
@@ -942,7 +945,7 @@ def driver(fn, bt, sg, m, mi, eps, epsin, rCM, rFM, cFJ,rpf ):
     print("Starting Iteration epsilon=",epsilon)
     runStatistics.write('---------------------\n')
     runStatistics.write('Initial Processing of file '+sourceFileName+' mu='+str(mu)+'\n') 
-    main(sourceFileName)
+    main(sourceFileName,useJava=useJava_p)
     goodClusterFile.close()
     buildLinkFile()
     runStatistics.write('\nCluster Profile\n')
