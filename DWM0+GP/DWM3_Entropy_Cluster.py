@@ -19,7 +19,7 @@ sigma = 0
 beta = 0
 ERtype=''
 mu = 0.0
-muIncrement = 0.0
+muIterate = 0.0
 clusterProfile ={}
 erMetricsPrefix = ''
 runClusterMetrics = False
@@ -768,8 +768,8 @@ def main(fileName,useJava=True):
 
    
     #mu = 1
-    if reprocess and (mu + muIncrement < 1.0):
-        mu = mu + muIncrement
+    if reprocess and (mu + muIterate < 1.0):
+        mu = mu + muIterate
         epsilon = epsilon + epsilonIncrement
         print("\n>>>>>>>>>>>>\nStarting Iteration mu=",mu)
         print("Starting Iteration epsilon=",epsilon)
@@ -811,8 +811,8 @@ def driver(fn, bt, sg, m, mi, eps, epsin, rCM, rFM, cFJ,rpf,useJava_p=True):
     sigma = sg
     global mu
     mu = m
-    global muIncrement
-    muIncrement = mi
+    global muIterate
+    muIterate = mi
     global epsilon
     epsilon = eps
     global epsilonIncrement
@@ -928,7 +928,7 @@ def driver(fn, bt, sg, m, mi, eps, epsin, rCM, rFM, cFJ,rpf,useJava_p=True):
     runStatistics.write('Beta (blocking) = '+str(beta)+'\n')
     runStatistics.write('Sigma (stop word) = '+str(sigma)+'\n')
     runStatistics.write('Mu (match start) = '+str(mu)+'\n')
-    runStatistics.write('Mu Increment = '+str(muIncrement)+'\n')
+    runStatistics.write('Mu Increment = '+str(muIterate)+'\n')
     runStatistics.write('Epsilon (entropy) = '+str(epsilon)+'\n')
     runStatistics.write('Epsilon Increment = '+str(epsilonIncrement)+'\n')
     runStatistics.write('---------------------\n')
