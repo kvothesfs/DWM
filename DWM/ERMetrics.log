@@ -1,0 +1,100 @@
+2020-08-23 11:56:22,128 INFO ==================== Matrix Robot Test =====================
+2020-08-23 11:56:22,145 INFO ER Metrics version: 2.1.0
+2020-08-23 11:56:22,147 INFO Using configuration file ERMetricsPoorDQfinal.properties
+2020-08-23 11:56:22,147 INFO Creating report ...
+2020-08-23 11:56:22,147 INFO Calculating Entity Resolution ERMetrics . . .
+2020-08-23 11:56:22,149 INFO Reference record.column:1 cluster.column:2
+2020-08-23 11:56:22,152 INFO 	Header:[RecID,IdTruth]
+2020-08-23 11:56:22,153 INFO 	Record #1:A912969:1
+2020-08-23 11:56:22,917 INFO Reference Set Records Read[271142]  Duplicates[0]  Created[271142]  Errors[0]
+2020-08-23 11:56:22,918 INFO Link Rule Column ignored
+2020-08-23 11:56:22,918 INFO Link record.column:1 cluster.column:2 rule.column:0
+2020-08-23 11:56:22,918 INFO Reading Link File [ResultsLinkFile.txt]
+2020-08-23 11:56:22,918 INFO 	Record #1:A904736:A904736
+2020-08-23 11:56:22,921 INFO Link Set Records Read[999]  Matched[999]  Created[0]  Errors[0]
+2020-08-23 11:56:22,921 INFO Performing INNER join for 271142 references
+2020-08-23 11:56:22,966 INFO Joined Link Set Records Total[271142]  NoLinkId[270143]  NoReferenceId[0]  Joined[999]
+2020-08-23 11:56:22,967 INFO Computing True Pairs and Clusters for 999 references
+2020-08-23 11:56:23,065 INFO Total Count:999 Pairs:2804 Clusters:195
+2020-08-23 11:56:23,068 INFO 100 False Negative pairs written
+2020-08-23 11:56:23,069 INFO Computing Linked Pairs and Clusters for 999 references
+2020-08-23 11:56:23,075 INFO Total Count:999 Pairs:3160 Clusters:240
+2020-08-23 11:56:23,076 INFO 100 False Positive pairs written
+2020-08-23 11:56:23,077 INFO Computing Agreement Pairs and Clusters for 999 references
+2020-08-23 11:56:23,081 INFO Total Count:999 Pairs:2490 Clusters:269
+2020-08-23 11:56:23,082 INFO 
+2020-08-23 11:56:23,087 INFO Total Distinct Records ID values (N) ............... = 999
+2020-08-23 11:56:23,087 INFO ---------------------Clusters ----------------------
+2020-08-23 11:56:23,087 INFO Reference Set Clusters (EC) ........................ = 195
+2020-08-23 11:56:23,088 INFO Link Set Clusters (LC) ............................. = 240
+2020-08-23 11:56:23,088 INFO Reference+Link Set Agreement Clusters (AC) ......... = 269
+2020-08-23 11:56:23,088 INFO 
+2020-08-23 11:56:23,088 INFO ---------------------Pairs -------------------------
+2020-08-23 11:56:23,088 INFO Total Pairs (D) = ((N * N-1) / 2) .................. = 498,501
+2020-08-23 11:56:23,089 INFO Reference Set Pairs (E) ............................ = 2,804
+2020-08-23 11:56:23,089 INFO Link Set Linked Pairs (L) .......................... = 3,160
+2020-08-23 11:56:23,089 INFO Reference+Link Set Agreement Pairs (A) ............. = 2,490
+2020-08-23 11:56:23,089 INFO True Positive Pairs (TP) ........................... = 2,490
+2020-08-23 11:56:23,089 INFO False Positive Pairs (FP) = L - TP ................. = 670
+2020-08-23 11:56:23,090 INFO True Negative Pairs (TN) = D - TP - FP - FN ........ = 495,027
+2020-08-23 11:56:23,090 INFO False Negative Pairs (FN) = E - TP ................. = 314
+2020-08-23 11:56:23,090 INFO 
+2020-08-23 11:56:23,090 INFO ---------------------Rates - (0.0 - 1.0) -----------
+2020-08-23 11:56:23,095 INFO False Positive Rate = FP / (TN + FP) ............... = 0.00135163
+2020-08-23 11:56:23,096 INFO False Negative Rate = FN / E ....................... = 0.11198288
+2020-08-23 11:56:23,096 INFO Accuracy = (TP + TN) / D ........................... = 0.99802608
+2020-08-23 11:56:23,096 INFO Precision = TP / (TP + FP) ......................... = 0.78797468
+2020-08-23 11:56:23,096 INFO Recall = TP / (TP + FN) ............................ = 0.88801712
+2020-08-23 11:56:23,097 INFO F-Measure .......................................... = 0.83501006
+2020-08-23 11:56:23,097 INFO TWi ................................................ = 0.80421218
+2020-08-23 11:56:23,097 INFO Complete
+2020-08-23 11:56:23,575 INFO ==================== Matrix Robot Test =====================
+2020-08-23 11:56:23,577 INFO ER Metrics version: 2.1.0
+2020-08-23 11:56:23,579 INFO Using configuration file ERMetricsPoorDQfinal.properties
+2020-08-23 11:56:23,579 INFO Creating report ...
+2020-08-23 11:56:23,579 INFO Calculating Entity Resolution ERMetrics . . .
+2020-08-23 11:56:23,580 INFO Reference record.column:1 cluster.column:2
+2020-08-23 11:56:23,581 INFO 	Header:[RecID,IdTruth]
+2020-08-23 11:56:23,581 INFO 	Record #1:A912969:1
+2020-08-23 11:56:24,315 INFO Reference Set Records Read[271142]  Duplicates[0]  Created[271142]  Errors[0]
+2020-08-23 11:56:24,316 INFO Link Rule Column ignored
+2020-08-23 11:56:24,316 INFO Link record.column:1 cluster.column:2 rule.column:0
+2020-08-23 11:56:24,316 INFO Reading Link File [ResultsLinkFile.txt]
+2020-08-23 11:56:24,316 INFO 	Record #1:A904736:A904736
+2020-08-23 11:56:24,319 INFO Link Set Records Read[999]  Matched[999]  Created[0]  Errors[0]
+2020-08-23 11:56:24,319 INFO Performing INNER join for 271142 references
+2020-08-23 11:56:24,366 INFO Joined Link Set Records Total[271142]  NoLinkId[270143]  NoReferenceId[0]  Joined[999]
+2020-08-23 11:56:24,366 INFO Computing True Pairs and Clusters for 999 references
+2020-08-23 11:56:24,433 INFO Total Count:999 Pairs:2804 Clusters:195
+2020-08-23 11:56:24,437 INFO 100 False Negative pairs written
+2020-08-23 11:56:24,438 INFO Computing Linked Pairs and Clusters for 999 references
+2020-08-23 11:56:24,444 INFO Total Count:999 Pairs:3160 Clusters:240
+2020-08-23 11:56:24,445 INFO 100 False Positive pairs written
+2020-08-23 11:56:24,446 INFO Computing Agreement Pairs and Clusters for 999 references
+2020-08-23 11:56:24,451 INFO Total Count:999 Pairs:2490 Clusters:269
+2020-08-23 11:56:24,451 INFO 
+2020-08-23 11:56:24,453 INFO Total Distinct Records ID values (N) ............... = 999
+2020-08-23 11:56:24,453 INFO ---------------------Clusters ----------------------
+2020-08-23 11:56:24,454 INFO Reference Set Clusters (EC) ........................ = 195
+2020-08-23 11:56:24,454 INFO Link Set Clusters (LC) ............................. = 240
+2020-08-23 11:56:24,454 INFO Reference+Link Set Agreement Clusters (AC) ......... = 269
+2020-08-23 11:56:24,454 INFO 
+2020-08-23 11:56:24,454 INFO ---------------------Pairs -------------------------
+2020-08-23 11:56:24,454 INFO Total Pairs (D) = ((N * N-1) / 2) .................. = 498,501
+2020-08-23 11:56:24,454 INFO Reference Set Pairs (E) ............................ = 2,804
+2020-08-23 11:56:24,455 INFO Link Set Linked Pairs (L) .......................... = 3,160
+2020-08-23 11:56:24,455 INFO Reference+Link Set Agreement Pairs (A) ............. = 2,490
+2020-08-23 11:56:24,455 INFO True Positive Pairs (TP) ........................... = 2,490
+2020-08-23 11:56:24,455 INFO False Positive Pairs (FP) = L - TP ................. = 670
+2020-08-23 11:56:24,455 INFO True Negative Pairs (TN) = D - TP - FP - FN ........ = 495,027
+2020-08-23 11:56:24,455 INFO False Negative Pairs (FN) = E - TP ................. = 314
+2020-08-23 11:56:24,455 INFO 
+2020-08-23 11:56:24,455 INFO ---------------------Rates - (0.0 - 1.0) -----------
+2020-08-23 11:56:24,459 INFO False Positive Rate = FP / (TN + FP) ............... = 0.00135163
+2020-08-23 11:56:24,460 INFO False Negative Rate = FN / E ....................... = 0.11198288
+2020-08-23 11:56:24,460 INFO Accuracy = (TP + TN) / D ........................... = 0.99802608
+2020-08-23 11:56:24,460 INFO Precision = TP / (TP + FP) ......................... = 0.78797468
+2020-08-23 11:56:24,461 INFO Recall = TP / (TP + FN) ............................ = 0.88801712
+2020-08-23 11:56:24,461 INFO F-Measure .......................................... = 0.83501006
+2020-08-23 11:56:24,461 INFO TWi ................................................ = 0.80421218
+2020-08-23 11:56:24,461 INFO Complete
