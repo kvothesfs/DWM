@@ -1,0 +1,165 @@
+Data Washing Machine Refactor Version 1.4
+
+>> Starting DWM20
+Input Reference File Name = S2G.txt
+Input File has Header Records = True
+Input File Delimiter = ,
+Tokenizer Function Type = Splitter
+Remove Duplicate Reference Tokens = True
+Tokenized Reference Output File Name = S2G-Tokenized.txt
+Total References Read= 100
+Total Tokens Found = 1247
+Total Unique Tokens = 464
+
+>>Starting DWM30
+Total References Read from  S2G-Tokenized.txt = 100
+
+>>Starting Iterations
+mu start value= 0.5
+mu iterate value= 0.1
+epsilon start value= 3.5
+epsilon iterate value= 0.0
+comparator = Cosine
+
+****New Iteration
+Size of refList = 100 Size of linkIndex = 0
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 391
+Total Blocking Records Created 564
+
+>>Starting DWM50
+Total Blocks Processed = 214
+Total Pairs in Compare Cache = 234
+
+>>Starting DWM70
+Total Pairs Linked = 54  at mu= 0.5
+
+>>Starting DWM80
+Total Closure Iterations = 2
+
+>>Starting DWM90
+Total Clusters Processed = 28
+Total Good Clusters = 22  at epsilon = 3.5
+Total References in Good Cluster = 50
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.6
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 50 Size of linkIndex = 50
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 200
+Total Blocking Records Created 192
+
+>>Starting DWM50
+Total Blocks Processed = 91
+Total Pairs in Compare Cache = 76
+
+>>Starting DWM70
+Total Pairs Linked = 10  at mu= 0.6
+
+>>Starting DWM80
+Total Closure Iterations = 3
+
+>>Starting DWM90
+Total Clusters Processed = 5
+Total Good Clusters = 3  at epsilon = 3.5
+Total References in Good Cluster = 6
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.7
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 44 Size of linkIndex = 56
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 182
+Total Blocking Records Created 153
+
+>>Starting DWM50
+Total Blocks Processed = 79
+Total Pairs in Compare Cache = 56
+
+>>Starting DWM70
+Total Pairs Linked = 4  at mu= 0.7
+
+>>Starting DWM80
+Total Closure Iterations = 4
+
+>>Starting DWM90
+Total Clusters Processed = 2
+Total Good Clusters = 1  at epsilon = 3.5
+Total References in Good Cluster = 2
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.8
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 42 Size of linkIndex = 58
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 176
+Total Blocking Records Created 133
+
+>>Starting DWM50
+Total Blocks Processed = 75
+Total Pairs in Compare Cache = 43
+
+>>Starting DWM70
+Total Pairs Linked = 2  at mu= 0.8
+
+>>Starting DWM80
+Total Closure Iterations = 1
+
+>>Starting DWM90
+Total Clusters Processed = 2
+Total Good Clusters = 2  at epsilon = 3.5
+Total References in Good Cluster = 4
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.9
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 38 Size of linkIndex = 62
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 153
+Total Blocking Records Created 110
+
+>>Starting DWM50
+Total Blocks Processed = 67
+Total Pairs in Compare Cache = 36
+
+>>Starting DWM70
+Total Pairs Linked = 0  at mu= 0.9
+Ending because pairList is empty
+Record written to S2G-LinkIndex.txt = 100
+
+Cluster Profile
+Size	Count
+1 	 38 	 38
+2 	 22 	 44
+3 	 6 	 18
+	Total	 100
+>>Starting DWM99
+Truth File Name= truthABCgoodDQ.txt
+Precision= 0.95
+Recall= 0.7917
+F-measure= 0.8637
+End of Program

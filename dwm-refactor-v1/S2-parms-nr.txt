@@ -1,0 +1,35 @@
+# Test of Parameter File
+inputFileName=S2G.txt
+# beta sets blocking frequency, must be 2 or larger and less than sigma
+beta=6
+# sigms sets stop word frequency, must be larger than beta
+sigma=12
+# epsilon sets the entropy threshold, must be positive
+epsilon=3.5
+# epsilonIterate is the value added to epsilon for each iteration
+epsilonIterate=0.0
+# mu is the starting match threshold, must be less than or equal to 1.00
+mu=0.50
+# muIterate is the value added to mu for each iteration, must be positive
+muIterate=0.10
+# valid comparators are 'Cosine' and 'MongeElkan'
+comparator=Cosine
+# hasHeader indicates if first line of reference file is a header records (True/False)
+hasHeader=True
+# tokenizer indicates which tokenization method, valid values are 'Compress' and 'Splitter'
+tokenizerType=Splitter
+# delimiter indicates the field sparator character, can't be blank
+delimiter=,
+# removeDuplicateTokens indicates removal of duplicate tokens within same reference
+removeDuplicateTokens=True
+# truthFileName runs ER metrics against this truth set
+truthFileName=truthABCgoodDQ.txt
+#configure parms for global replacement
+runReplacement=False
+minFreqStdToken=5
+minLenStdToken=3
+maxFreqErrToken=3
+#-------------------
+# These parameters have not yet been implemented
+#runClusterMetrics=True
+#createFinalJoin=True

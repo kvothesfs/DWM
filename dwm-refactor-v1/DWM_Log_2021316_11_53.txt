@@ -1,0 +1,184 @@
+Data Washing Machine Refactor Version 1.4
+
+>> Starting DWM20
+Input Reference File Name = S2G.txt
+Input File has Header Records = True
+Input File Delimiter = ,
+Tokenizer Function Type = Splitter
+Remove Duplicate Reference Tokens = True
+Tokenized Reference Output File Name = S2G-Tokenized.txt
+Total References Read= 100
+Total Tokens Found = 1247
+Total Unique Tokens = 464
+
+>>Starting DWM25 --- runReplacement is set to True, starting global token replacement
+Global Replace Cycle
+Total References= 100
+Total Tokens= 1247
+Unique Tokens= 464
+Minimum Frequency of Standard Token =  5
+Minimum Length of Standard Token =  3
+Maximum Frequency of Error Token =  3
+References Processed= 100
+Sorted Token Size = 464
+Clean Token Size = 197
+*Stop Replacements here
+References Processed =  100
+Total Replacement Pairs = 3
+Tokens Read = 1247
+Tokens Changed =  8
+References Changed = 8
+
+>>Starting DWM30
+Total References Read from  S2G-TokenReplace.txt = 100
+
+>>Starting Iterations
+mu start value= 0.5
+mu iterate value= 0.1
+epsilon start value= 3.5
+epsilon iterate value= 0.0
+comparator = ScoringMatrix
+
+****New Iteration
+Size of refList = 100 Size of linkIndex = 0
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 399
+Total Blocking Records Created 556
+
+>>Starting DWM50
+Total Blocks Processed = 211
+Total Pairs in Compare Cache = 229
+
+>>Starting DWM70
+Total Pairs Linked = 68  at mu= 0.5
+
+>>Starting DWM80
+Total Closure Iterations = 3
+
+>>Starting DWM90
+Total Clusters Processed = 27
+Total Good Clusters = 16  at epsilon = 3.5
+Total References in Good Cluster = 37
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.6
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 63 Size of linkIndex = 37
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 256
+Total Blocking Records Created 284
+
+>>Starting DWM50
+Total Blocks Processed = 118
+Total Pairs in Compare Cache = 114
+
+>>Starting DWM70
+Total Pairs Linked = 28  at mu= 0.6
+
+>>Starting DWM80
+Total Closure Iterations = 2
+
+>>Starting DWM90
+Total Clusters Processed = 12
+Total Good Clusters = 7  at epsilon = 3.5
+Total References in Good Cluster = 17
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.7
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 46 Size of linkIndex = 54
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 178
+Total Blocking Records Created 168
+
+>>Starting DWM50
+Total Blocks Processed = 82
+Total Pairs in Compare Cache = 69
+
+>>Starting DWM70
+Total Pairs Linked = 10  at mu= 0.7
+
+>>Starting DWM80
+Total Closure Iterations = 2
+
+>>Starting DWM90
+Total Clusters Processed = 4
+Total Good Clusters = 1  at epsilon = 3.5
+Total References in Good Cluster = 2
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.8
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 44 Size of linkIndex = 56
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 168
+Total Blocking Records Created 157
+
+>>Starting DWM50
+Total Blocks Processed = 80
+Total Pairs in Compare Cache = 65
+
+>>Starting DWM70
+Total Pairs Linked = 3  at mu= 0.8
+
+>>Starting DWM80
+Total Closure Iterations = 1
+
+>>Starting DWM90
+Total Clusters Processed = 3
+Total Good Clusters = 3  at epsilon = 3.5
+Total References in Good Cluster = 6
+
+>>End of Iteration, Resetting mu and epsilon
+>>>New Value of mu =  0.9
+>>>New Value of epsilon =  3.5
+
+****New Iteration
+Size of refList = 38 Size of linkIndex = 62
+
+>>Starting DWM40
+beta = 6
+sigma = 12
+Stop Words excluded= 154
+Total Blocking Records Created 109
+
+>>Starting DWM50
+Total Blocks Processed = 66
+Total Pairs in Compare Cache = 36
+
+>>Starting DWM70
+Total Pairs Linked = 0  at mu= 0.9
+Ending because pairList is empty
+Record written to S2G-LinkIndex.txt = 100
+
+Cluster Profile
+Size	Count
+1 	 38 	 38
+2 	 20 	 40
+3 	 6 	 18
+4 	 1 	 4
+	Total	 100
+>>Starting DWM99
+Truth File Name= truthABCgoodDQ.txt
+Precision= 0.9545
+Recall= 0.875
+F-measure= 0.913
+End of Program
